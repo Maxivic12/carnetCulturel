@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body
+{
+    background-color: black;
+}
+
+section.first
+{
+    height: 90vh;
+    background-image: url(assets/image-principale.jpeg);
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+section.first .textbox
+{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+section.first .textbox .text
+{
+    margin-left: 100px;
+}
+
+section.first .textbox .text h1
+{
+    color: white;
+    font-size: 5em;
+    width: 600px;
+}
+
+section.first .textbox .text p
+{
+    color: white;
+    font-size: 1.4em;
+    width: 650px;
+    margin-top: 10px;
+}
+
+section.first .textbox .text a
+{
+    position: relative;
+    display: inline-block;
+    background: #fff;
+    color: #111;
+    padding: 15px 25px;
+    text-decoration: none;
+    font-size: 1.1em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 500;
+    margin-top: 40px;
+}
+
+/* SECOND */
+
+section.second
+{
+    background-color: rgba(51,51,51,1);
+    padding: 50px 100px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+section.second h1 
+{
+    color: white;
+    font-size: 2.6em;
+    margin-bottom: 50px;
+}
+
+section.second .images
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    
+}
+
+section.second .images img 
+{
+    width: 400px;
+    margin-bottom: 50px;
+}
+
+/* THIRD */
+
+section.third
+{
+    background-color: rgba(34,34,34,1);
+    padding: 100px;
+    color: white;
+}
+
+section.third div 
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section.third div p.citation
+{
+    text-align: center;
+    font-size: 1.9em;
+    font-weight: 600;
+}
+
+section.third div p.name
+{
+    text-align: center;
+    font-size: 1.7em;
+    margin-top: 30px;
+    font-style: italic;
+}
+
+/* Four */
+section.four
+{
+    color: white;
+    padding: 80px 300px;
+}
+
+section.four div.critic_text 
+{
+    padding: 40px;
+    border: 1px solid white;
+}
+
+
+section.four h1
+{
+    color: white;
+    font-size: 4em;
+}
+
+section.four p
+{
+    font-size: 20px;
+    text-indent: 40px;
+}
+
+section.four p.space
+{
+    margin: 50px 0;
+}
+
+/* Five */
+section.five 
+{
+    color: white;
+    background-color: rgb(99, 99, 99);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+}
+
+section.five h1
+{
+    font-size: 3.2em;
+}
+
+.cards
+{
+    color: black;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.cards .box
+{
+    width: 350px;
+    margin: 0 auto;
+    position: relative;
+    perspective: 1000px;
+    margin: 50px;
+}
+
+.cards .box .front-face
+{
+    height: 220px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    box-shadow: 0px 5px 20px 0px rgba(0,81,250, 0.1);
+    transition: all 0.6s ease;
+}
+
+.cards .box .front-face span 
+{
+    font-size: 22px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+
+.box .back-face
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    z-index: 1;
+    height: 220px;
+    width: 100%;
+    padding: 30px;
+    opacity: 0;
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+    transform: translateY(110px) rotateX(-90deg);
+    transition: all 0.6s ease;
+}
+
+.box .back-face p 
+{
+    margin-top: 10px;
+    text-align: justify;
+}
+
+.box:hover .back-face
+{
+    opacity: 1;
+    transform: rotateX(0deg);
+}
+
+.box:hover .front-face
+{
+    opacity: 0;
+    transform: translateY(-110px) rotateX(90deg);
+}
+
+/* Footer */
+footer
+{
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+footer a 
+{
+    text-decoration: none;
+    color: white;
+}
