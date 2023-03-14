@@ -15,7 +15,7 @@ body
 section.first
 {
     height: 90vh;
-    background-image: url(assets/image-principale.jpeg);
+    background-image: url(image-principale.jpeg);
     background-size: cover;
     background-color: rgba(0, 0, 0, 0.5);
 }
